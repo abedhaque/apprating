@@ -20,7 +20,7 @@ def get_all_apps():
 
 
 if __name__ == "__main__":
-    np.random.seed(5)
+    np.random.seed(10)
     num_apps = 100
     app_names = get_random_names(num_apps)
     print(app_names)
