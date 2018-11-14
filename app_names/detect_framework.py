@@ -22,18 +22,18 @@ framework_strings = {'xamarin': 'xamarin',
                      'kotlin': 'kotlin'}
 framework_results = {}
 
-for key in framework_strings.keys():
-    framework_results[key] = []
+for framework in framework_strings.keys():
+    framework_results[framework] = []
 
-for file in file_names:
-    f = open("../sample_outputs/{}".format(file), "r")
+for app_file in file_names:
+    f = open("../sample_outputs/{}".format(app_file), "r")
     text = f.read()
-    for key in framework_strings.keys():
-        if framework_strings[key] in text:
-            framework_results[key].append(file)
+    for framework_name in framework_strings.keys():
+        if framework_strings[framework_name] in text:
+            framework_results[framework_name].append(app_file)
 
 #print(framework_results)
 
-for key, value in framework_results.iteritems():
-    print (key + ': ' + str(len(value)) + '\t\t\t' + str(value))
+for framework_name, value in framework_results.iteritems():
+    print (framework_name + ': ' + str(len(value)) + '\t\t\t' + str(value))
 

@@ -1,3 +1,4 @@
+App Name|Package Name|Company|Category|Price|Platform|Downloads|Rating
 Facebook|com.facebook.katana|Facebook|Social|Free|Android|78988863|4.064
 WhatsApp Messenger|com.whatsapp|WhatsApp Inc.|Communication|Free|Android|70629425|4.4
 Instagram|com.instagram.android|Instagram|Social|Free|Android|68317231|4.513
@@ -146,7 +147,8 @@ Telegram|org.telegram.messenger|Telegram FZ-LLC|Communication|Free|Android|32573
 Parallel Space - Multiple accounts & Two face|com.lbe.parallel.intl|LBE Tech|Personalization|Free|Android|3288579|4.598
 War Robots|com.pixonic.wwr|PIXONIC|Action|Free|Android|3260417|4.584
 MORTAL KOMBAT X|com.wb.goog.mkx|Warner Bros. International Enterprises|Action|Free|Android|3192974|4.456
-Amazon India Online Shopping|in.amazon.mShop.android.shopping|Amazon Mobile LLC|Shopping|Free|Android|3410904|4.342Firefox Browser fast & private|org.mozilla.firefox|Mozilla|Communication|Free|Android|3125186|4.372
+Amazon India Online Shopping|in.amazon.mShop.android.shopping|Amazon Mobile LLC|Shopping|Free|Android|3410904|4.342
+Firefox Browser fast & private|org.mozilla.firefox|Mozilla|Communication|Free|Android|3125186|4.372
 CM Locker - Security Lockscreen|com.cmcm.locker|Cheetah Mobile (Secure lockscreen & Applock)|Tools|Free|Android|3102635|4.608
 Vector|com.nekki.vector|NEKKI|Arcade|Free|Android|3091843|4.379
 SimSimi|com.ismaker.android.simsimi|SimSimi Inc.|Entertainment|Free|Android|3119851|4.31
@@ -989,7 +991,7 @@ Assistant for Android - 1MB|com.advancedprocessmanager|AA Mobile|Productivity|Fr
 Samsung Print Service Plugin|com.sec.app.samsungprintservice|HP Inc.|Productivity|Free|Android|297954|4.191
 Fart sound pranks|com.amdroid.pedo.gas.flatulencia|AMDROID|Casual|Free|Android|284614|3.789
 My Verizon|com.vzw.hss.myverizon|Verizon - VZ|Tools|Free|Android|302064|3.911
-Wallpapers HD, 4K Backgrounds|com.wallpaperscraft.wallpaper|WallpapersCraft | WallCraft|Personalization|Free|Android|287776|4.742
+Wallpapers HD, 4K Backgrounds|com.wallpaperscraft.wallpaper|WallpapersCraft WallCraft|Personalization|Free|Android|287776|4.742
 Photo Collage Editor|com.meihillman.photocollage|MeiHillMan|Photography|Free|Android|291848|4.642
 Zombie Frontier |com.feelingtouch.sniperzombie|FT Games|Action|Free|Android|281888|4.215
 Power Rangers|com.nway.powerrangerslegacywars|nWay Inc.|Action|Free|Android|288438|4.256
@@ -1465,7 +1467,7 @@ Cerberus anti theft|com.lsdroid.cerberus|LSDroid|Productivity|Free|Android|10898
 Topbuzz|com.ss.android.article.mynews.br|TopBuzz Global|News and Magazines|Free|Android|110098|4.553
 Kingdom Rush Frontiers|com.ironhidegames.android.kingdomrushfrontiers|Ironhide Game Studio|Strategy|$1.99|Android|109630|4.733
 Cat Simulator |com.hgamesart.catsimulator|HGamesArt|Action|Free|Android|110212|4.376
-Neon 2 | HD Wallpapers - Themes 2018|com.ksmobile.launcher.theme.neonlife|Nick Suthar|Personalization|Free|Android|107813|4.345
+Neon 2 | HD Wallpapers - Themes 2018|com.ksmobile.launcher.theme.neonlife|Nick Suthar Personalization|Free|Android|107813|4.345
 DIGI Clock Widget|sk.michalec.SimpleDigiClockWidget|ForestTree|Personalization|Free|Android|108408|4.501
 Modern War by GREE|jp.gree.modernwar|Funzio Games, Inc|Action|Free|Android|107244|4.088
 Storm of Darkness|com.feelingtouch.sod|Mountain Lion|Action|Free|Android|107665|3.898
