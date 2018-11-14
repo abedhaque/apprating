@@ -20,20 +20,25 @@ framework_strings = {'xamarin': 'xamarin',
                      'sencha_touch': 'sencha',
                      'kendo_ui': 'kendo',
                      'kotlin': 'kotlin'}
-framework_results = {}
+frameworks_to_apps = {}
+app_to_frameworks = {}
 
 for framework in framework_strings.keys():
-    framework_results[framework] = []
+    frameworks_to_apps[framework] = []
 
 for app_file in file_names:
     f = open("../sample_outputs/{}".format(app_file), "r")
     text = f.read()
+    app_to_frameworks[app_file] = []
     for framework_name in framework_strings.keys():
         if framework_strings[framework_name] in text:
-            framework_results[framework_name].append(app_file)
+            frameworks_to_apps[framework_name].append(app_file)
+            app_to_frameworks[app_file].append(framework_name)
 
 #print(framework_results)
 
-for framework_name, value in framework_results.iteritems():
-    print (framework_name + ': ' + str(len(value)) + '\t\t\t' + str(value))
+# for framework_name, matching_apps in framework_results.iteritems():
+#     print (framework_name + ': ' + str(len(matching_apps)) + '\t\t\t' + str(matching_apps))
 
+for app_name, matching_frameworks in app_to_frameworks.iteritems():
+    print(app_name + ':    ' + str(matching_frameworks))
