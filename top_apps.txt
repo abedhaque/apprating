@@ -1449,7 +1449,7 @@ Cerberus anti theft|com.lsdroid.cerberus|LSDroid|Productivity|Free|Android|10898
 Topbuzz|com.ss.android.article.mynews.br|TopBuzz Global|News and Magazines|Free|Android|110098|4.553
 Kingdom Rush Frontiers|com.ironhidegames.android.kingdomrushfrontiers|Ironhide Game Studio|Strategy|$1.99|Android|109630|4.733
 Cat Simulator |com.hgamesart.catsimulator|HGamesArt|Action|Free|Android|110212|4.376
-Neon 2 | HD Wallpapers - Themes 2018|com.ksmobile.launcher.theme.neonlife|Nick Suthar Personalization|Free|Android|107813|4.345
+Neon 2 HD Wallpapers - Themes 2018|com.ksmobile.launcher.theme.neonlife|Nick Suthar|Personalization|Free|Android|107813|4.345
 DIGI Clock Widget|sk.michalec.SimpleDigiClockWidget|ForestTree|Personalization|Free|Android|108408|4.501
 Modern War by GREE|jp.gree.modernwar|Funzio Games, Inc|Action|Free|Android|107244|4.088
 Storm of Darkness|com.feelingtouch.sod|Mountain Lion|Action|Free|Android|107665|3.898
@@ -1555,3 +1555,5 @@ Crystal S5 Live Wallpaper|com.androidwasabi.livewallpaper.s5|Wasabi|Personalizat
 Photo Cartoon Camera- PaintLab|com.fotoable.paintlab|Weather Radar Forecast|Photography|Free|Android|93123|4.099
 3D Wallpapers|com.goodwallpapers.tapety_3d_vectorial|Best of the best|Personalization|Free|Android|93025|4.017
 FZ9|vn.com.hikergames.fpsfreeze|HIKER GAMES|Action|Free|Android|95269|4.43
+Target|com.target.ui|Target Corporation|Shopping|Free|Android|79819|4.2
+iPicTheaters|com.ipictheaters.ipic|iPic Entertainment LLC|Entertainment|Free|Android|103|3.3
