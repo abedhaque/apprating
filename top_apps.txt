@@ -1424,24 +1424,6 @@ DUAL!|com.Seabaa.Dual|Seabaa|Action|Free|Android|114514|4.197
 Marmok's Team Monster Crush|com.taptics.marmokIdle|Taptics|Action|Free|Android|121428|4.831
 Waterfall Live Wallpaper|com.WaterfallLiveWallpaper|Live Wallpaper HD 3D|Personalization|Free|Android|113457|4.12
 Photo FX Live Wallpaper|slide.photoWallpaper|androidslide|Personalization|Free|Android|113189|4.023
-Facebook|com.facebook.katana|Facebook|Social|Free|Android|81215884|4.073
-WhatsApp Messenger|com.whatsapp|WhatsApp Inc.|Communication|Free|Android|74718717|4.409
-Instagram|com.instagram.android|Instagram|Social|Free|Android|71118867|4.517
-Clean Master- Space Cleaner & Antivirus|com.cleanmaster.mguard|Cheetah Mobile|Tools|Free|Android|43485133|4.658
-Subway Surfers|com.kiloo.subwaysurf|Kiloo|Arcade|Free|Android|28535571|4.494
-YouTube|com.google.android.youtube|Google LLC|Video Players|Free|Android|30322271|4.318
-Security Master - Antivirus, VPN, AppLock, Booster|com.cleanmaster.security|Cheetah Mobile (AppLock & AntiVirus)|Tools|Free|Android|25144991|4.654
-Clash Royale|com.supercell.clashroyale|Supercell|Strategy|Free|Android|23948163|4.552
-Candy Crush Saga|com.king.candycrushsaga|King|Casual|Free|Android|23430147|4.439
-UC Browser - Fast Download Private & Secure|com.UCMobile.intl|UCWeb Inc.|Communication|Free|Android|18541641|4.456
-Snapchat|com.snapchat.android|Snap Inc|Social|Free|Android|17789332|4.053
-Google Play services|com.google.android.gms|Google LLC|Tools|Free|Android|18579576|4.034
-360 Security - Free Antivirus, Booster, Cleaner|com.qihoo.security|360 Mobile Security Limited|Tools|Free|Android|16799995|4.583
-My Talking Tom|com.outfit7.mytalkingtomfree|Outfit7 Limited|Casual|Free|Android|15220114|4.491
-8 Ball Pool|com.miniclip.eightballpool|Miniclip.com|Sports|Free|Android|14851454|4.529
-DU Battery Saver - Battery Charger & Battery Life|com.dianxinos.dxbs|DU APPS STUDIO - BATTERY&BOOSTER|Tools|Free|Android|13526767|4.525
-BBM - Free Calls & Messages|com.bbm|BBM .|Communication|Free|Android|12903595|4.274
-Cache Cleaner-DU Speed Booster (booster & cleaner)|com.dianxinos.optimizer.duplay|DU APPS STUDIO - BATTERY&BOOSTER|Tools|Free|Android|12812814|4.539
 Slide|company.fortytwo.slide.app|42 Company|News and Magazines|Free|Android|113376|3.956
 NatWest Mobile Banking|com.rbs.mobile.android.natwest|The Royal Bank of Scotland PLC|Finance|Free|Android|117230|4.584
 Petals 3D live wallpaper|com.SkyDivers.petals3d|SkyDivers|Personalization|Free|Android|112548|4.188
