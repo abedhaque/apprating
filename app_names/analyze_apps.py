@@ -2,6 +2,7 @@ import pandas as pd
 import os
 from tabulate import tabulate
 from detect_framework import *
+import statistics
 
 
 df = pd.read_table('../top_apps.txt', sep='|')
@@ -28,7 +29,7 @@ for file in file_names:
 df = df[df['Downloaded'] == 1]
 
 category_percentages_df = pd.DataFrame({'Percentage': df.groupby('Category').size() / len(df),
-                                        'Count': df.groupby('Category').size()})
+                                        'Count': df.groupby('Category').size()}).sort(columns='Count', ascending=0)
 print('Categories by percentage:\n\n')
 print(category_percentages_df.to_latex())
 
@@ -71,9 +72,7 @@ for index, row in df.iterrows():
         else:
             category_to_kotlin_usage[row['Category']] += 1
 
-#
-# category_to_framework_usage_df = pd.DataFrame.from_dict(category_to_framework_usage_dict_no_kotlin, orient='index',
-#                                                         columns=['Category', 'Apps that used a framework'])
+
 category_to_framework_usage_no_kotlin_df = pd.DataFrame(
     list(category_to_framework_usage_dict_no_kotlin.iteritems()),
     columns=['Category', 'Apps that used a framework']).sort(columns='Apps that used a framework', ascending=0)
@@ -82,7 +81,72 @@ category_to_kotlin_usage_df = pd.DataFrame(
     list(category_to_kotlin_usage.iteritems()),
     columns=['Category', 'Apps that used Kotlin']).sort(columns='Apps that used Kotlin', ascending=0)
 
-print category_to_framework_usage_no_kotlin_df.to_latex(index=False)
-print category_to_kotlin_usage_df.to_latex(index=False)
+#print category_to_framework_usage_no_kotlin_df.to_latex(index=False)
+#print category_to_kotlin_usage_df.to_latex(index=False)
+
+# Create a boxplot of app ratings by framework used
+# The categories are Native/unkown, Kotlin, framework
+framework_to_ratings_dict = {}
+for fw in frameworks:
+    framework_to_ratings_dict[fw] = []
+
+framework_to_ratings_dict['native/unknown'] = []
+
+print('------------------')
+for framework_name, matching_apps in detected_frameworks_to_apps.iteritems():
+    if len(matching_apps) > 0:
+        for app in matching_apps:
+            rating = df.loc[df['Package Name'] == app, 'Rating'].item()
+            #print('RATING for ' + app + ' is ' + str(rating))
+            framework_to_ratings_dict[framework_name].append(rating)
+
+# We need to get the ratings for all native/unkown apps as a baseline
+for index, row in df.iterrows():
+    if len(row['Frameworks']) == 0:
+        framework_to_ratings_dict['native/unknown'].append(row['Rating'])
+
+# create a df from the dict
+framework_to_ratings_df = pd.DataFrame(
+    list(framework_to_ratings_dict.iteritems()),
+    columns=['Framework', 'Ratings']).sort(columns='Ratings', ascending=0)
+
+print tabulate(framework_to_ratings_df, headers='keys', tablefmt='psql')
 
 
+
+average_ratings = []
+total_ratings = []
+standard_dev_ratings = []
+
+for index, row in framework_to_ratings_df.iterrows():
+    ratings_list = row['Ratings']
+    total_ratings.append(len(ratings_list))
+    average_ratings.append(sum(ratings_list) / len(ratings_list))
+    if len(ratings_list) == 1:
+        standard_dev_ratings.append(-1)
+    else:
+        standard_dev_ratings.append(statistics.stdev(ratings_list))
+
+# for framework, ratings_list in framework_to_ratings_dict.iteritems():
+#     total_ratings.append(len(ratings_list))
+#     average_ratings.append(sum(ratings_list)/len(ratings_list))
+#     if len(ratings_list) == 1:
+#         standard_dev_ratings.append(-1)
+#     else:
+#         standard_dev_ratings.append(statistics.stdev(ratings_list))
+
+
+#print(total_ratings)
+#print(average_ratings)
+#print(standard_dev_ratings)
+
+framework_to_ratings_df['Total Ratings'] = total_ratings
+framework_to_ratings_df['Average Rating'] = average_ratings
+framework_to_ratings_df['Standard Deviation'] = standard_dev_ratings
+print tabulate(framework_to_ratings_df, headers='keys', tablefmt='psql')
+framework_to_ratings_df = framework_to_ratings_df.drop('Ratings', 1)
+framework_to_ratings_df = framework_to_ratings_df.sort(columns='Total Ratings', ascending=0)
+framework_to_ratings_df = framework_to_ratings_df.round(3)
+
+
+print(framework_to_ratings_df.to_latex(index=False))
